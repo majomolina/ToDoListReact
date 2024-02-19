@@ -1,0 +1,165 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	padding: 0 20px;
+	background: var(--azul);
+	color: #fff;
+	border-radius: 3px 3px 0px 0px;
+}
+/**header**/
+.header__title {
+	font-weight: 100;
+	font-size: 15px;
+}
+
+.header__button {
+	background: none;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	background: #004c92;
+	padding: 5px 10px;
+	border-radius: 3px;
+	display: flex;
+	align-items: center;
+  margin-left:120px;
+}
+
+.header__icon-buton {
+	font-size: 10px;
+	margin-left: 10px;
+}
+
+/* * --- --- ---  FORM --- --- --- */
+.form-task {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	padding: 20px;
+	box-shadow: 0 2px 10px rgba(139,139,139,.25);
+}
+
+.form-task__input {
+	border: none;
+	padding: 15px;
+	width: 100%;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-bottom: 2px solid #676dc7;
+}
+
+.form-task__input:focus {
+	outline: none;
+	border-bottom: 2px solid;
+  border-color: rgb(233, 106, 87);
+}
+
+.form-task__btn {
+	position: absolute;
+	bottom: 40px;
+	right: 20px;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.form-task__icon-btn {
+	font-size: 22px;
+	color: rgb(27, 189, 27);
+  padding-top: 50px;
+}
+
+/* * --- --- ---  LISTA TAREAS --- --- --- */
+
+.list-task {
+	list-style: none;
+	height: 100%;
+	overflow: auto;
+}
+
+.list-task__task {
+	height: 60px;
+	padding: 0 20px;
+	align-items: center;
+	color: #4B4B4B;
+	font-size: 18px;
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+}
+
+.list-task__text {
+	text-align: left;
+	width: 100%;
+}
+
+.list-task__task:hover .list-task__icon-action {
+	opacity: 0.5;
+}
+
+.list-task__task:nth-child(even) {
+	background: #F3F3F3;
+}
+
+.list-task__container-btn {
+	display: flex;
+}
+
+.list-task__icon {
+	cursor: pointer;
+	font-size: 16px;
+}
+
+.list-task__icon-check {
+	margin-right: 20px;
+	font-size: 26px;
+}
+
+.list-task__icon-action {
+	margin-left: 20px;
+	opacity: 0;
+	transition: .3s ease all;
+}
+
+.list-task__msn {
+	text-align: center;
+	color: #bdaeae;
+	font-size: 20px;
+	padding: 40px 20px;
+}
+
+
+/* * --- --- ---  FORM EDIT TASK --- --- --- */
+.form-edit-task {
+	display: flex;
+}
+
+.form-edit-task__input {
+	width: 100%;
+	border: none;
+	border-bottom: 2px solid #b8b8b8;
+	background: none;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	margin-right: 20px;
+}
+
+.form-edit-task__btn {
+	border: none;
+	background: var(--verde);
+	cursor: pointer;
+	color: #fff;
+	padding: 0 10px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 3px;
+}
